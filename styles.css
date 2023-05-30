@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #28313b, #485461);
+  background-blend-mode: multiply;
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calculator {
+  width: 320px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly transparent white to let background show through */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#display {
+  height: 96px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+#secondary-display {
+  align-self: flex-end;
+  font-size: 1.2em;
+}
+
+#display #main-display {
+  align-self: flex-end;
+  font-size: 3.2em;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  height: 96px;
+  font-size: 2.4em;
+  border: 0.5px solid #000;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease; /* Smooth hover */
+  color: #fff;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 3D effect */
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+button:active,
+button.selected {
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2); /* 3D pressed effect */
+  transform: scale(0.97);
+}
+
+button.num {
+  background-color: #2c2929;
+}
+
+button.num.double-width {
+  grid-column: span 2;
+}
+
+button.operator {
+  background-color: #ff8d29;
+}
+
+button.operator.selected {
+  background-color: #ffcc66;
+  color: #fff;
+}
+
+button#equals {
+  background-color: #ff8d29;
+}
+
+button#clear,
+button.function {
+  background-color: #dddbdb;
+  color: #000;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Arrange child elements vertically */
+  align-items: center;
+}
+
+.part-1 {
+  display: inline-block;
+  font-size: 2.7em;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 0.5s forwards;
+  margin-bottom: 0.3em; /* Space between the two lines */
+  margin-top: 0.3em; /* Space between the two lines */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.part-2 {
+  display: inline-block;
+  font-size: 4em;
+  color: #ff8d29;
+  opacity: 0; /* Hide the element initially */
+  animation: fadeIn 2s ease-in-out 2.5s forwards; /* Add a 2 second delay */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.4);
+  opacity: 0; /* Hide the element initially */
+  animation: fadeIn 2s ease-in-out 4s forwards;
+}
+
+.footer a {
+  font-weight: 700; /* Making links bold */
+  color: #ff8d29;
+  text-decoration: none;
+  transition: font-size 0.3s ease-in-out; /* Animate font-size change */
+}
+
+.footer a:hover {
+  color: #ffcc66;
+  font-size: 1.1em; /* Increase font-size when mouse hovers over link */
+}

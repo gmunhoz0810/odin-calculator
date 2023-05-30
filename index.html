@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone Style Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="calculator-container">
+      <div class="title">
+        <span class="part-1">Just a Simple...</span>
+        <span class="part-2">Calculator</span>
+      </div>
+
+      <div id="calculator">
+        <div id="display">
+          <span id="secondary-display"></span>
+          <span id="main-display">0</span>
+        </div>
+        <div id="buttons">
+          <button id="clear">C</button>
+          <button id="sqrt" class="function">&#8730;</button>
+          <button id="square" class="function">X<sup>2</sup></button>
+          <button class="operator">&divide;</button>
+          <button class="num" value="7">7</button>
+          <button class="num" value="8">8</button>
+          <button class="num" value="9">9</button>
+          <button class="operator">&#215;</button>
+          <button class="num" value="4">4</button>
+          <button class="num" value="5">5</button>
+          <button class="num" value="6">6</button>
+          <button class="operator">-</button>
+          <button class="num" value="1">1</button>
+          <button class="num" value="2">2</button>
+          <button class="num" value="3">3</button>
+          <button class="operator">+</button>
+          <button class="num double-width" value="0">0</button>
+          <button class="num" value=".">.</button>
+          <button id="equals" value="=">=</button>
+        </div>
+      </div>
+      <div class="footer">
+        Made by
+        <a href="https://github.com/gmunhoz0810" target="_blank">gmunhoz</a> |
+        <a href="https://github.com/gmunhoz0810/odin-calculator" target="_blank"
+          >Source Code</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
