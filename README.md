@@ -19,15 +19,19 @@ The user interface of this calculator has been designed to match the sleek and s
 
 To get a local copy up and running, follow these simple steps:
 
-1. Clone the repository <br>
+1. Clone the repository
+
    ```bash
    git clone https://github.com/gmunhoz0810/odin-calculator.git
    ```
-2. Navigate to the project directory <br>
+
+2. Navigate to the project directory
+
    ```bash
    cd odin-calculator
    ```
-3. Open index.html in your favorite browser <br>
+
+3. Open index.html in your favorite browser
 
 ## Code Overview
 
