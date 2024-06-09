@@ -2,7 +2,7 @@
 
 ![Calculator Preview](./images/SimpleCalculator.png)
 
-Live: [https://gmunhoz0810.github.io/odin-calculator/](url)
+Live: [[https://gmunhoz0810.github.io/odin-calculator/](https://gmunhoz0810.github.io/odin-calculator/)](url)
 
 This repository holds the source code for an iPhone-like calculator. Developed using vanilla JavaScript, HTML, and CSS, it emulates the key functionalities of a standard calculator including addition, subtraction, multiplication, and division. It also has a couple of extra functions such as the square root (√) and square (x²) operations.
 
